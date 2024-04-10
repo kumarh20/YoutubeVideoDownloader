@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video Downloader</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .container {
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+}
+
+input {
+    width :400px;
+    padding: 23px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    height: 18px;
+    font-size: 15px;;
+}
+
+button {
+    padding: 6px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    background-color: rgb(97, 10, 178);
+    color: white;
+    position: absolute;
+    top: 19%;
+    left:96%;
+}
+button:hover .arrow  {
+    font-size: 23px;
+    transition: all 3s ease-in-out;
+}
+body{
+    background-color: rgb(16, 18, 64);
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+form {
+    position: relative;
+    width: 400px;
+    margin: auto;
+}
+h1{
+    margin: 10px auto;
+    width: fit-content;
+    padding-left: 45px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+ul li{
+    list-style: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Youtube Video Downloader</h1>
+        <form id="dataForm" method="post" action="/">
+            <input type="text" id="videoUrl" name="dataToSend" placeholder="Paste Your Link">
+            <button type="submit"><span class="arrow" title="Download here">⬇</span></button>
+    </form>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+        {% if messages %}
+            <ul class="messages">
+                {% for category, message in messages %}
+                    <li class="message {{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------- -->
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>YouTube Downloader</title>
+</head>
+<body>
+    <h1>YouTube Video Downloader</h1>
+    <form method="POST">
+        <label for="url">Enter YouTube Video URL:</label>
+        <input type="text" id="url" name="url">
+        <br>
+        {% if formats %}
+        <label for="format">Select Quality:</label>
+        <br>
+        {% for format in formats %}
+        <input type="radio" id="format" name="format" value="{{ format.itag }}"> {{ format.resolution }}<br>
+        {% endfor %}
+        <br>
+        {% endif %}
+        <button type="submit">Download</button>
+    </form>
+    {% if video_title %}
+    <p>Video Title: {{ video_title }}</p>
+    {% endif %}
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+</body>
+</html> -->
+
+
+
