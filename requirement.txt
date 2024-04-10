@@ -1,0 +1,2 @@
+Create a file named requirements.txt in your project's root directory (the one containing static, templates, and app.py).
+Add the line Flask to this file. This tells Render to install Flask during the deployment process.
